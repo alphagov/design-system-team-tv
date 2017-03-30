@@ -48,6 +48,7 @@ body {
   color: $text-color;
   font-family: 'nta', "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
 
 b, strong {
