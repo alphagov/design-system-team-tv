@@ -10,6 +10,7 @@ GEM
     eventmachine (1.2.3)
     execjs (2.0.2)
     hike (1.2.3)
+    icalendar (2.4.1)
     multi_json (1.12.1)
     rack (1.5.5)
     rack-protection (1.5.3)
@@ -60,6 +61,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  icalendar
   smashing
 
 BUNDLED WITH

@@ -1,12 +1,24 @@
-<% content_for :title do %>My super sweet dashboard<% end %>
+<% content_for :title do %>Service Manual, Patterns & Tools<% end %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="welcome" data-view="Text" data-title="Service Manual, Patterns & Tools" data-text="gov.uk/service-toolkit"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="google_calendar" data-view="GoogleCalendar"></div>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="standup">
+      <div data-id="standup" data-view="Text" data-title="10AM" data-text="Daily Stand Up"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="2">
+      <div id="calendar-events" data-id="calendar-events" data-view="GoogleCalendar"></div>
+    </li>
+
+    <li data-row="1" data-col="4" data-sizex="2" data-sizey="2">
+      <div id="calendar-research" data-id="calendar-research" data-view="GoogleCalendar"></div>
     </li>
   </ul>
 </div>

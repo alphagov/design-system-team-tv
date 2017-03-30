@@ -1,0 +1,54 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #28A197; //#ec663c;
+
+$title-color:       rgba(255, 255, 255, 1);
+$subtitle-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-calendar styles
+// ----------------------------------------------------------------------------
+.widget-google-calendar {
+
+  background-color: $background-color;
+  vertical-align: top !important;
+  padding-top: 2em;
+  box-sizing: border-box;
+  
+  .title {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .event {
+    margin-top: 10px;
+  }
+
+  .event-title {
+    font-size: 1.5em;
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  .event-location {
+    color: $subtitle-color;
+  }
+
+  .event-date {
+    font-size: 0.9em;
+    color: $subtitle-color;
+  }
+
+  .updated-at {
+    color: $subtitle-color;
+    bottom: 5px;
+    right: 5px;
+    left: auto;
+    font-size: 0.5em;
+  }
+}
+
+#calendar-research {
+  background: #6F72AF;
+}

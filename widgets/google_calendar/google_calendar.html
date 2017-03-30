@@ -1,0 +1,21 @@
+<h1 class="title" data-bind="name"></h1>
+
+<div class="event" data-foreach-e='events'>
+
+  <h2 class="event-title">
+    <span data-bind="e.summary"></span>
+  </h2>
+
+  <p class="event-location" data-bind="e.location"></p>
+
+  <p class="event-date">
+    <span data-bind="e.start_date"></span>
+
+    <span data-removeif="e.is_all_day" data-bind="e.start_time"></span>
+    <span data-insertif="e.is_ranged">-</span>
+    <span data-bind="e.end_date" data-insertif="e.is_multiple_day"></span>
+    <span data-removeif="e.is_all_day" data-bind="e.end_time"></span>
+  </p>
+</div>
+
+<div class="updated-at" data-bind="updatedAtMessage"></div>
