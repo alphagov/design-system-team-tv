@@ -1,16 +1,24 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (5.0.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
     backports (3.6.8)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    concurrent-ruby (1.0.5)
     daemons (1.2.4)
     eventmachine (1.2.3)
     execjs (2.0.2)
     hike (1.2.3)
+    i18n (0.8.1)
     icalendar (2.4.1)
+    minitest (5.10.1)
     multi_json (1.12.1)
     rack (1.5.5)
     rack-protection (1.5.3)
@@ -61,6 +69,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   icalendar
   smashing
 
