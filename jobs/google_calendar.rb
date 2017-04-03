@@ -27,7 +27,7 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
     end
 
     events.select! do |event|
-      event[:start] > DateTime.now
+      event[:end] > DateTime.now
     end
 
     events = events.sort { |a, b| a[:start] <=> b[:start] }
@@ -41,5 +41,4 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
       events: events
     }
   end
-
 end
