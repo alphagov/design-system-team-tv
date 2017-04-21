@@ -1,0 +1,16 @@
+calendars:
+  # key is used as part of data-id to enable multiple calendars on the dashboard e.g.
+  # <div id="calendar-stuff" data-id="calendar-stuff" data-view="GoogleCalendar"></div>
+  # <div id="calendar-things" data-id="calendar-things" data-view="GoogleCalendar"></div>
+  stuff:
+    name: "Upcoming Stuff"
+    # 'Private Address' from Calendar Settings page in Google Calendar
+    url: https://this.is.just.an.example.com/example.ics
+    limit: 5
+  things:
+    name: "Upcoming Things"
+    # 'Private Address' from Calendar Settings page in Google Calendar
+    url: https://this.is.just.an.example.com/example.ics
+    limit: 7
+    exclusions:
+    - event title # exclude events called 'event title' from display
