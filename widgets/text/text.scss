@@ -12,6 +12,8 @@ $moreinfo-color:    #F8F8F8;
 .widget-text {
 
   background-color: $background-color;
+  padding: 1em;
+  box-sizing: border-box;
 
   .title {
     color: $title-color;
